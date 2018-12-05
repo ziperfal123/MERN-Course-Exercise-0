@@ -53,10 +53,11 @@ module.exports = class Resturant extends events.EventEmitter {
   }
 
 
+
     //CALLBACKS (As part of the Resturant Class)//
 
   deleteAllOrders() {
-    allTheMessages.push('All the orders were deleted');
+    allTheMessages.push('All the orders were deleted.');
     console.log(`All the orders were deleted.`);
   }
 
@@ -89,8 +90,8 @@ module.exports = class Resturant extends events.EventEmitter {
         console.log(`an order has been removed. There is ${this.arrOfOrders.length} order in the resturant now.`);
     }
     else {
-      saveAllMessagesInArray(`an order has been removed. There are ${this.arrOfOrders.length} orders in the resturant now`);
-        console.log(`an order has been removed. There are ${this.arrOfOrders.length} orders in the resturant now`);
+      saveAllMessagesInArray(`an order has been removed. There are ${this.arrOfOrders.length} orders in the resturant now.`);
+        console.log(`an order has been removed. There are ${this.arrOfOrders.length} orders in the resturant now.`);
     }
         
   }
@@ -111,7 +112,6 @@ module.exports = class Resturant extends events.EventEmitter {
         console.log(`There are 0 guests.`);
     }
   }
-
 
 }
 
