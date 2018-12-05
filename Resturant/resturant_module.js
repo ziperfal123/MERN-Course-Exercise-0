@@ -18,7 +18,7 @@ class Order {
 module.exports = class Resturant extends events.EventEmitter {
   constructor() {
     super();
-    this.arrOfOrders = [];
+    this.arrOfOrders = [];  // an Array of objects from the 'Order' Class above.
   }
 
   printOrders() {
@@ -116,7 +116,7 @@ module.exports = class Resturant extends events.EventEmitter {
 }
 
 
-
+/*The Array that will be used in order to print all the 'console.log()' messages to the browser.*/
 let saveAllMessagesInArray = (messageToPush) => {
   allTheMessages.push(messageToPush);
 }
