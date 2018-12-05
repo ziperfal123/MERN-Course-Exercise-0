@@ -1,6 +1,6 @@
 const           events          =   require('events'),
                 http            =   require('http'),
-                PORT            =   3000;
+                PORT            =   process.env.PORT || 3000;
                 eventsConfig    =   require('./Resturant/config.js').events,
                 Resturant       =   require('./Resturant/resturant_module');
 
@@ -17,10 +17,10 @@ theResturant.on(eventsConfig.PRINT_ALL      ,   theResturant.printAllGuests);
 
 
 http.createServer(function (req , res) {
-
-    if (req.url != '/favicon.ico') {        // In order to make sure that the "favicon.ico" call that being automatically fetched by the browsers will not be displayed.
-        /* Adding orders to the resturant */
-
+    
+    /* The IF statement is for making sure that the "favicon.ico" call that being automatically
+    fetched by the browsers will not be displayed.*/
+    if (req.url != '/favicon.ico') {
         // DEMO --> START //
 
         theResturant.addOrder(`Yaniv` , 4 , false);
