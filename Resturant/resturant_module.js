@@ -46,7 +46,7 @@ module.exports = class Resturant extends events.EventEmitter {
       this.arrOfOrders.pop();
     }
     else {
-      saveAllMessagesInArray("the number of orders is 0! can not decrease to a negative number of orders");
+      saveAllMessagesInArray("the number of orders is 0! can not decrease to a negative number of orders.");
         console.log(`the number of orders is 0! can not decrease to a negative number of orders.`);
     }  
         this.emit("DecreaseOne");
